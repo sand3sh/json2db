@@ -46,6 +46,7 @@ docker run -p 9099:9099 --network=host -d json2db
         	]
         }
 
+<host:port>/push send body as example below 
     EXAMPLE2: Send data with data to be replaced at ["testname","weeknumber"], then the data at that particular record of testname && weeknumber is replaced
             {
         	"tableName": "testcases",
@@ -64,6 +65,7 @@ docker run -p 9099:9099 --network=host -d json2db
         		}
         	]
         }
+        
 ### USAGE OPTION 2
 
 Format is <host:port>/record/<name>/<value> 
@@ -71,7 +73,7 @@ or
 <host:port>/record/name 
 Then send value in body; value in body can be json too
 
-# PSQL Commands
+## PSQL Commands
 -  show tables 
 \dt
 -   connect 

@@ -5,7 +5,9 @@ git clone https://github.com/sand3sh/json2db.git
 ## INSTALLATION#
 npm install
 
-### RUN YOUR POSTGRESQL DATABASE
+### SETUP AND RUN YOUR POSTGRESQL DATABASE
+**Pre-requisites:** Create the database named in **json2db**
+
 psql -U postgres -d json2db
 
 ## METHOD1
@@ -51,7 +53,7 @@ docker run -p 9099:9099 --network=host -d json2db
 
     EXAMPLE2: Send data with data to be replaced at ["testname","weeknumber"], then the data at that particular record of testname && weeknumber is replaced
     
-            {
+            `{
         	"tableName": "testcases",
         	"unique": ["testname","weeknumber"]
         	"items": [{
@@ -67,7 +69,7 @@ docker run -p 9099:9099 --network=host -d json2db
         			"system":"codex"
         		}
         	]
-        }
+        }`
         
         
 ### USAGE OPTION 3 Push record via URL

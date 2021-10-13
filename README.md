@@ -23,7 +23,7 @@ docker run -p 9099:9099 --network=host -d json2db
 
 
 ### USAGE OPTION1
-    #ToSend data to database with any json
+    # ToSend data to database with any json
     <host:port>/push send body as example below
     EXAMPLE1: Send data with empid as unique, then the data at that particular record of empid is deleted and below updated
             {
@@ -45,7 +45,7 @@ docker run -p 9099:9099 --network=host -d json2db
         		}
         	]
         }
-
+# ToSend data to database with any json
 <host:port>/push send body as example below 
     EXAMPLE2: Send data with data to be replaced at ["testname","weeknumber"], then the data at that particular record of testname && weeknumber is replaced
             {

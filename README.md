@@ -1,18 +1,19 @@
 # SETUP
 Download the repository from github and go to the project folder
+git clone https://github.com/sand3sh/json2db.git
 
-# INSTALLATION#
+## INSTALLATION#
 npm install
 
-# RUN YOUR POSTGRESSQL DATABASE
+### RUN YOUR POSTGRESSQL DATABASE
 psql -U postgres -d json2db
 
-# METHOD1
-## RUNNING STANDALONE
+## METHOD1
+### RUNNING STANDALONE
 node server.js
 
-# METHOD2
-## RUNNING VIA DOCKER
+## METHOD2
+### RUNNING VIA DOCKER
 docker build -t json2db .
 
 docker run -p 9099:9099 -d json2db
@@ -21,7 +22,7 @@ docker run -p 9099:9099 -d json2db
 docker run -p 9099:9099 --network=host -d json2db
 
 
-# USAGE OPTION1
+### USAGE OPTION1
     #ToSend data to database with any json
     <host:port>/push send body as example below
     EXAMPLE1: Send data with empid as unique, then the data at that particular record of empid is deleted and below updated
@@ -63,7 +64,7 @@ docker run -p 9099:9099 --network=host -d json2db
         		}
         	]
         }
-# USAGE OPTION 2
+### USAGE OPTION 2
 
 Format is <host:port>/record/<name>/<value> 
 or 

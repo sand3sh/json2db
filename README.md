@@ -5,7 +5,7 @@ git clone https://github.com/sand3sh/json2db.git
 ## INSTALLATION#
 npm install
 
-### RUN YOUR POSTGRESSQL DATABASE
+### RUN YOUR POSTGRESQL DATABASE
 psql -U postgres -d json2db
 
 ## METHOD1
